@@ -6,6 +6,7 @@ import Expertise from '../Sections/expertise'
 import Quotes from '../Sections/quotes'
 import AnimationTransition from "../components/animation_transition";
 import cellularAutomataImg from '../assets/cellularAutomata.jpg'
+import aStarImg from '../assets/aStar.jpg'
 import vorksinImg from '../assets/vorskin.jpg'
 function PageController() {
   const BackgroundStyle = {
@@ -59,10 +60,21 @@ function PageController() {
       </FullpageSection>
       </AnimationTransition>
 
+      <AnimationTransition from='left' delay={300}>
+      <FullpageSection style={SectionStyle}>
+          <Showcase
+          title="Pathfinding"
+          imgUrl={aStarImg}
+          description="Pathfinding visualization with A* algorithm"
+          className="showcase-item"
+          />
+      </FullpageSection>
+      </AnimationTransition>
+
 
       <AnimationTransition from='left' delay={300}>
       <FullpageSection style={SectionStyle}>
-          <Quotes content="Strive to be what you what"/>
+          <Quotes content="Strive to be what you want"/>
       </FullpageSection>
       </AnimationTransition>
 

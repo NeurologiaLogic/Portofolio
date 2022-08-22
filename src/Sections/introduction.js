@@ -1,13 +1,20 @@
 import Jumbotron from "../components/jumbotron";
 import ListGroup from "../components/list_group";
 
-import { MDBBtn, MDBIcon } from 'mdb-react-ui-kit';
+import { MDBBtn, MDBIcon,MDBBtnGroup  } from 'mdb-react-ui-kit';
 function Introduction() {
   const scaleAndBg =
   {
-    // transform: 'scale(1.1)',
+    transform: 'scale(1.2)',
     color: '#f5f5f5',
+    padding:'0.5rem',
+    backgroundColor:'black',
+    marginRight:'.7rem',
+    borderRadius:'15%',
     // backgroundColor: '#f5f5f5',
+    "&:hover": {
+      background: "#efefef"
+    },
   }
   return (
     <div className="d-flex flex-column">
@@ -16,15 +23,15 @@ function Introduction() {
         description="Student Of Computer Science, Binus University."
         />
         <div className="icon-wrapper d-flex">
-          <MDBBtn className='icon-item mx-1' floating style={scaleAndBg} href='#'>
-            <MDBIcon fab icon='github' />
-          </MDBBtn>
-          <MDBBtn className='icon-item mx-1' floating style={scaleAndBg} href='#'>
-            <MDBIcon fab icon='steam' />
-          </MDBBtn>
-          <MDBBtn className='icon-item mx-1' floating style={scaleAndBg} href='#'>
-            <MDBIcon fab icon='instagram' />
-          </MDBBtn>
+            <a href="https://github.com/NeurologiaLogic">
+              <MDBIcon fab icon='github'  style={scaleAndBg} />
+            </a>
+            <a href ="https://steamcommunity.com/id/Rexter580/">
+              <MDBIcon fab icon='steam'  style={scaleAndBg} />
+            </a>
+            <a href ="https://www.instagram.com/patrickwon_/">
+              <MDBIcon fab icon='instagram' style={scaleAndBg}  />
+            </a>
         </div>
 
     </div>
