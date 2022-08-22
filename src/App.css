@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+/* @font-face {
+  font-family: "GoldmanBold";
+  src: local("GoldmanBold"),
+   url("./fonts/Goldman/Goldman-Bold.ttf") format("ttf");
+  font-weight: bold;
+} */
+body
+{
+  font-family: "montserrat";
+}
+/* scroll */
+/* .scroll-container,.scroll-item
+{
+  height:75vh;
+  width:75vw;
+}
+.scroll-container
+{
+  scroll-snap-type:'y mandatory';
+  overflow-y:auto !important;
+  overflow-x:hidden;
+}
+.scroll-container >h1
+{
+  scroll-snap-align:start;
+}
+.scroll-item
+{
+  scroll-snap-align:'start' !important;
+} */
+
+/* scroll end */
+.h-screen>footer
+{
+  display:none;
+}
+.flex-0
+{
+  display:none;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+/* media query phone */
+@media (max-width: 726px) {
+  .jumbotron>h1
+  {
+    flex-wrap:wrap;
+    margin: 0rem 1rem;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .icon-wrapper>.icon-item
+  {
+    transform:scale(0.8);
+    margin:none;
   }
-  to {
-    transform: rotate(360deg);
+  .grid-system
+  {
+    margin-top:20rem;
+    /* display:flex;
+    flex-direction: row; */
+  }
+  .grid-row
+  {
+    display:flex;
+    flex-direction: column;
+  }
+  .grid-image
+  {
+    width:100%;
+    height:100%;
+  }
+  .grid-description
+  {
+    display:flex;
+    width:100%;
+    flex-direction: column;
+  }
+  .project-showcase
+  {
+    /* margin-top:3rem; */
+  }
+  .showcase-item
+  {
+    margin:10rem;
+  }
+  .visible-with-desktop
+  {
+    display:none;
   }
 }
